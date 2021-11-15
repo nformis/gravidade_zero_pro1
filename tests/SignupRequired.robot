@@ -19,6 +19,6 @@ Password Is Required
 *Keywords
 Signup Without Filling Form
 
-    Base.Start Session
+    Start Session
     Go To Signup Form
     Submit Signup Form

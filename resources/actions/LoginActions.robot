@@ -19,13 +19,14 @@ Submit Credentials
     Click                       css=.submit-button >> text=Entrar
 
 User Should Be Logged In
-    [Arguments]                 ${expected_user}
-    ${full_name}                Set Variable  ${expected_user}[name] ${expected_user}[lastname]
-    ${profile}                  Set Variable  css=a[href="/profile"]
+    [Arguments]                 ${user}
 
-    Wait For Elements State     ${profile}  visible  5
-    Get Text                    ${profile}  equal  ${full_name}
+    ${element}                  Set Variable  css=a[href="/profile"]
+    ${full_name}                Set Variable  ${user}[name] ${user}[lastname]
+
+    Wait For Elements State     ${element}  visible  5
+    Get Text                    ${element}  equal  ${full_name}
 
 Field Should Be Type Email
 
-    Wait For Elements State     css=input[type=email]  visible  5
+    Get Property                id=email  type  equal  email

@@ -10,7 +10,7 @@ Test Teardown                       Finish Session
 User Logins
     [Tags]                          win
 
-    ${user}                         Factory Login User
+    ${user}                         Factory User  login
 
     Go To Login Page
     Fill Credentials                ${user}

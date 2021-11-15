@@ -23,8 +23,3 @@ User Should Be Registered
     ${expected_message}         Set Variable  css=p >> text=Agora você faz parte da Getgeeks. Tenha uma ótima experiência.
 
     Wait For Elements State     ${expected_message}  visible  ${TIMEOUT}
-
-Error Message Should Be
-    [Arguments]                 ${expected_error}
-
-    Wait For Elements State     css=span[class=error] >> text=${expected_error}  visible  ${TIMEOUT}

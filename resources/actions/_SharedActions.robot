@@ -32,3 +32,8 @@ Field Notifications Should Be
     END
 
     Lists Should Be Equal       ${got_alerts}  ${expected_notices}
+
+Error Message Should Be
+    [Arguments]                 ${expected_error}
+
+    Wait For Elements State     css=span[class=error] >> text=${expected_error}  visible  5

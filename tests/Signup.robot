@@ -10,7 +10,7 @@ Test Teardown                       Finish Session
 Register a New User
     [Tags]                          win
     
-    ${user}                         Factory User
+    ${user}                         Factory User  faker
     Set Suite Variable              ${user}
     
     Go To Signup Form
@@ -21,7 +21,7 @@ Register a New User
 Duplicated User
     [Tags]                          fail  dup_user
 
-    ${user}                         Factory User
+    ${user}                         Factory User  faker
 
     Add User Into Database          ${user}
 
@@ -33,7 +33,11 @@ Duplicated User
 Invalid Email
     [Tags]                          fail  inv_email
 
-    ${user}                         Factory Invalid Email
+    ${user}                         Create Dictionary
+    ...                             name=João
+    ...                             lastname=Lucas
+    ...                             email=jlucas%email.com
+    ...                             password=qwe123
     
     Go To Signup Form
     Fill Signup Form                ${user}
