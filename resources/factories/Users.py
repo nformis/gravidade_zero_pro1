@@ -43,7 +43,7 @@ def factory_user(target):
                 'password': "qwe123",
                 'geek_profile': {
                     'whats': '10987654321',
-                    'desc': 'Formato PC',
+                    'desc': 'Seu computador está lento? Reiniciando do nada? Talvez seja um virus, ou algum hardware com defeito. Posso fazer a manutenção no seu PC, formatando, reinstalando o SO, trocando algum componente físico, e porque não, remover o Baidu. Entre em contato!',
                     'printer_repair': 'Não',
                     'work': 'Remoto',
                     'cost': '10'

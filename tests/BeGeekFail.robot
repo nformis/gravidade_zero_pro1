@@ -17,7 +17,7 @@ Whatsapp Blank                  whats       ${EMPTY}                O Whatsapp d
 Whatsapp DDD                    whats       19                      O Whatsapp deve ter 11 digitos contando com o DDD
 Whatsapp 10d                    whats       1234567890              O Whatsapp deve ter 11 digitos contando com o DDD
 Description Blank               desc        ${EMPTY}                Informe a descrição do seu trabalho
-Description Short               desc        Formato PCs             A descrição deve ter no minimo 80 caracteres
+Description Short               desc        Conserto PC             A descrição deve ter no minimo 80 caracteres
 Description Long                desc        ${long_description}     A descrição deve ter no máximo 255 caracteres
 Cost Blank                      cost        ${EMPTY}                Valor hora deve ser numérico
 Cost Letter                     cost        qwerty                  Valor hora deve ser numérico
